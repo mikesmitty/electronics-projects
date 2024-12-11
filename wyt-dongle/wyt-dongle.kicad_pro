@@ -59,16 +59,12 @@
         }
       ],
       "drc_exclusions": [
-        "hole_clearance|134195000|71200000|4fe93dca-ae7c-4ed5-a060-2be1f3780f02|75caa76c-0087-4b67-9575-6ae44d8ca60f",
-        "hole_clearance|134195000|71200000|4fe93dca-ae7c-4ed5-a060-2be1f3780f02|931cf21e-1666-41af-939c-9c32403755c6",
-        "hole_clearance|134195000|71400000|4fe93dca-ae7c-4ed5-a060-2be1f3780f02|6753db8c-58a0-48a6-b6a3-b67f08f42bfa",
-        "hole_clearance|134195000|71400000|4fe93dca-ae7c-4ed5-a060-2be1f3780f02|83bd2def-12f6-4947-9749-380125c0ad42",
-        "hole_clearance|134195000|76800000|ad2a19a6-7d27-4791-b9b9-0efce1f3b152|6bc77689-c05c-4d15-9712-906ed14a131c",
-        "hole_clearance|134195000|76800000|ad2a19a6-7d27-4791-b9b9-0efce1f3b152|f1107004-bb98-42f9-8312-6577ffe20c59",
-        "hole_clearance|134195000|77000000|ad2a19a6-7d27-4791-b9b9-0efce1f3b152|184ce20d-8aeb-42be-9995-433c7506f977",
-        "hole_clearance|134195000|77000000|ad2a19a6-7d27-4791-b9b9-0efce1f3b152|644bd841-237c-4c01-ac5d-b865194d0c48",
-        "silk_edge_clearance|125000000|52000000|111e29e5-63c5-47a3-a144-5d2590c8d8e9|d5af5ca9-4388-40e4-a809-e346bd38f81a",
-        "silk_edge_clearance|140400000|52000000|111e29e5-63c5-47a3-a144-5d2590c8d8e9|d9822c73-1c65-4251-b665-bf6bb2911172"
+        "hole_clearance|138045000|71050000|4ef1dd83-64f0-4f74-ba09-94d7f820e4af|71654593-0a09-452e-bcc2-abcf62cc4a5a",
+        "hole_clearance|138045000|71050000|6ab6ac64-6c40-4c13-ae67-3740f0f9324a|71654593-0a09-452e-bcc2-abcf62cc4a5a",
+        "hole_clearance|138045000|77150000|7ad2c8c5-21de-47ae-a80b-707738b26d5a|736c14e9-82cf-4d96-80f9-3372a240219b",
+        "hole_clearance|138045000|77150000|9af3d258-0045-41e9-9ff5-8bd6616da0c2|736c14e9-82cf-4d96-80f9-3372a240219b",
+        "silk_edge_clearance|125500000|52000000|111e29e5-63c5-47a3-a144-5d2590c8d8e9|d5af5ca9-4388-40e4-a809-e346bd38f81a",
+        "silk_edge_clearance|140900000|52000000|111e29e5-63c5-47a3-a144-5d2590c8d8e9|d9822c73-1c65-4251-b665-bf6bb2911172"
       ],
       "meta": {
         "version": 2
@@ -140,8 +136,8 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_annular_width": 0.075,
+        "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -222,6 +218,18 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.4,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -636,6 +644,90 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purchase-URL",
+          "name": "Purchase-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
           "show": false
         }
       ],
